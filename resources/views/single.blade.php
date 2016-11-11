@@ -4,7 +4,7 @@
 <div class="flex-center position-ref full-height" style="margin-bottom: 200px;" >
     <div class="content">
         <div class="title m-b-md">
-            Killin it with Laravel!
+            A sample blog post.
         </div>
 
         <div class="links">

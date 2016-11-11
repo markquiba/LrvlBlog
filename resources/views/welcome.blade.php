@@ -4,7 +4,7 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            Hi! This is a fckin blog.
+            The blog site.
         </div>
 
         <div class="links">
