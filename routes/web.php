@@ -19,3 +19,7 @@
 Route::get('/', 'PagesController@home');
 
 Route::get('/about', 'PagesController@about');
+
+Route::get('/single', 'PagesController@single');
+
+Route::get('/blog', 'BlogController@index');
