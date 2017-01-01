@@ -18,8 +18,10 @@
 
 Route::get('/', 'PagesController@home');
 
-Route::get('/about', 'PagesController@about');
+Route::get('about', 'PagesController@about');
 
-Route::get('/single', 'PagesController@single');
+Route::get('single', 'PagesController@single');
 
-Route::get('/blogs', 'BlogsController@index');
+Route::get('blogs', 'BlogsController@index');
+
+Route::resource('posts', 'PostController');
