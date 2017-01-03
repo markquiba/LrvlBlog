@@ -11,13 +11,7 @@
 				<div class="col-md-8 col-md-offset-2">
 					<h1>Edit: {{ $post->title }}</h1>
 					<hr>
-					@if($errors->any())
-					<div class="alert alert-danger">
-						@foreach($errors->all() as $error)
-							{{ $error }}
-						@endforeach
-					</div>
-					@endif
+					@include('errors.formerrors')
 					<form method="POST" action="{{ route('posts.update', $post->id) }}">
 						{{ csrf_field() }}
                         {{ method_field('PATCH') }}

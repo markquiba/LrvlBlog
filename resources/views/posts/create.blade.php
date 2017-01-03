@@ -11,13 +11,7 @@
 				<div class="col-md-8 col-md-offset-2">
 					<h1>Create New Post</h1>
 					<hr>
-					@if($errors->any())
-					<div class="alert alert-danger">
-						@foreach($errors->all() as $error)
-							{{ $error }}
-						@endforeach
-					</div>
-					@endif
+					@include('errors.formerrors')
 					<form method="POST" action="{{ route('posts.store') }}">
 						<div class="form-group">
 							<label name="title">Title:</label>
