@@ -1,4 +1,8 @@
-@extends('layout')
+@extends('layouts.master')
+
+@section('title'. 'About')
+
+@section('navabout', 'active')
 
 @section('content')
 <div class="flex-center position-ref full-height">

@@ -1,4 +1,8 @@
-@extends('layout')
+@extends('layouts.master')
+
+@section('title', 'Single')
+
+@section('navstatus', 'active')
 
 @section('content')
 <div class="flex-center position-ref full-height" style="margin-bottom: 200px;" >
@@ -19,7 +23,6 @@
 </div>
 <div id="content" class="flex-center position-ref full-height">
     <div class="content" style="width: 60%;">
-        <img style="max-width: 100%;" src="../resources/assets/images/slide2.jpg">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in dignissim dui. Nullam sit amet risus ac dui molestie lobortis. Sed congue rhoncus odio, nec cursus risus feugiat ut. Phasellus quis egestas velit. Ut id nulla id neque vestibulum vehicula. Quisque eu accumsan eros. Proin convallis cursus erat in tempus. Fusce sagittis leo ante, id luctus neque luctus ut. Etiam tincidunt molestie neque, a tincidunt lectus aliquet quis.
 
@@ -33,4 +36,4 @@
         </p>
     </div>
 </div>
-@stop
+@endsection
