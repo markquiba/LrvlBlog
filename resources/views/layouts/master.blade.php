@@ -34,8 +34,8 @@
                 <li class="@yield('navabout')"><a href="/about">About</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Signup</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
