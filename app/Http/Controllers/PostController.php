@@ -92,6 +92,7 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::findOrFail($id);
+
         return view('posts.edit', compact('post'));
     }
 
@@ -105,6 +106,11 @@ class PostController extends Controller
     public function update(Request $request, $id)
     {
         $post = Post::findOrFail($id);
+
+        $this->validate($request, array(
+            'title' => 'required|max:255',
+            'body' => 'required'
+        ));
 
         $post->update($request->all());
 
