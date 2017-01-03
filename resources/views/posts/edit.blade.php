@@ -24,12 +24,13 @@
 							<textarea id="body" name="body" rows="10" class="form-control">{{ isset($post->body) ? $post->body : old('body') }}</textarea>
 						</div>
 						<input type="submit" value="Save Post" class="btn btn-success btn-block" style="margin-top: -100px; margin-bottom: 30px;">
-						<form method="POST" action="{{ route('posts.destroy', $post->id) }}">
-							{{ csrf_field() }}
-	                        {{ method_field('DELETE') }}
-							<input type="submit" value="Delete Post" class="btn btn-danger btn-block" style="margin-top: -100px; margin-bottom: 30px;">
-						</form>
 					</form>
+					<form method="POST" action="{{ route('posts.destroy', $post->id) }}">
+						{{ csrf_field() }}
+                        {{ method_field('DELETE') }}
+						<input type="submit" value="Delete Post" class="btn btn-danger btn-block" style="margin-bottom: 30px;">
+					</form>
+					
 				</div>
 			</div>﻿
 		</div>
