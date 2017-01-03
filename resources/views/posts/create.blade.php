@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title', 'Post')
+
+@section('navposts', 'active')
+
 @section('content')
 	<div class="container">
 		<div class="row">
