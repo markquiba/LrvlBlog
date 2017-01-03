@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.master')
 
 @section('content')
 	<div class="container">
@@ -7,6 +7,13 @@
 				<div class="col-md-8 col-md-offset-2">
 					<h1>Create New Post</h1>
 					<hr>
+					@if($errors->any())
+					<div class="alert alert-danger">
+						@foreach($errors->all() as $error)
+							{{ $error }}
+						@endforeach
+					</div>
+					@endif
 					<form method="POST" action="{{ route('posts.store') }}">
 						<div class="form-group">
 							<label name="title">Title:</label>
@@ -16,7 +23,7 @@
 							<label name="body">Post Body:</label>
 							<textarea id="body" name="body" rows="10" class="form-control"></textarea>
 						</div>
-						<input type="submit" value="Create Post" class="btn btn-success btn-lg btn-block">
+						<input type="submit" value="Create Post" class="btn btn-success btn-block" style="margin-top: -100px; margin-bottom: 30px;">
 						<input type="hidden" name="_token" value="{{ Session::token() }}">
 					</form>
 				</div>
