@@ -16,6 +16,10 @@
     //return view('welcome', compact('people'));
 //});
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
 Route::get('/', 'PagesController@home');
 
 Route::get('about', 'PagesController@about');
@@ -25,3 +29,5 @@ Route::get('single', 'PagesController@single');
 Route::get('blogs', 'BlogsController@index');
 
 Route::resource('posts', 'PostController');
+
+
