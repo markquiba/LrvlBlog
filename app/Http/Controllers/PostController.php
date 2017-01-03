@@ -14,7 +14,12 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        // Show all posts
+        //$posts = Post::all();
+
+        // Gets the latest posts
+        $posts = Post::latest()->get();
+        
         return view('posts.index', compact('posts'));
     }
 
@@ -51,8 +56,11 @@ class PostController extends Controller
 
         $post->save();
 
-        // redirect to another page
-        return redirect()->route('posts.show', $post->id);
+        //redirect to posts index
+        return redirect('posts');
+
+        // redirect to the create post
+        //return redirect()->route('posts.show', $post->id);
     }
 
     /**
