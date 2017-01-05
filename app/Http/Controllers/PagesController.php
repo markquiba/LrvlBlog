@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Content;
+
 class PagesController extends Controller
 {
     public function home(){
+        $contents = Content::all();
     	$people = ['Mark', 'Armel', 'Vito'];
-	    return view('welcome', compact('people'));
+	    return view('welcome', compact('people', 'contents'));
     }
 
     public function about(){
