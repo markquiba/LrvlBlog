@@ -8,13 +8,14 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            The blog site.
+             {{ $contents[0]['meta_value'] }}
         </div>
 
         <div class="links">
             @if (empty($people))
                 There are no people who has an interest to write a blog.
             @endif
+            
             @unless (empty($people))
                 There are some people who has a blog.
             @endunless
