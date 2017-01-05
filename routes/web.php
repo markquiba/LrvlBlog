@@ -30,4 +30,10 @@ Route::get('blogs', 'BlogsController@index');
 
 Route::resource('posts', 'PostController');
 
+Route::get('/home', 'ContentController@index')->name('contents.index');
+
+Route::get('contents/{content}/edit', 'ContentController@edit')->name('contents.edit');
+
+Route::patch('contents/{content}', 'ContentController@update')->name('contents.update');
+
 
