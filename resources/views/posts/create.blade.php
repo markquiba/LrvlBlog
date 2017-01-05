@@ -21,7 +21,7 @@
 							<label name="body">Post Body:</label>
 							<textarea id="body" name="body" rows="10" class="form-control"></textarea>
 						</div>
-						<input type="submit" value="Create Post" class="btn btn-success btn-block" style="margin-top: -100px; margin-bottom: 30px;">
+						<input type="submit" value="Create Post" class="btn btn-success btn-block">
 						<input type="hidden" name="_token" value="{{ Session::token() }}">
 					</form>
 				</div>

@@ -23,7 +23,7 @@
 							<textarea id="body" name="body" rows="10" class="form-control">{{ isset($content->body) ? $content->body : old('body') }}</textarea>
 						</div>
 						-->
-						<input type="submit" value="Save Content" class="btn btn-success btn-block" style="margin-top: -100px; margin-bottom: 30px;">
+						<input type="submit" value="Save Content" class="btn btn-success btn-block">
 					</form>					
 				</div>
 			</div>﻿
